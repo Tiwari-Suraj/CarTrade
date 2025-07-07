@@ -25,13 +25,13 @@ const App = () => {
 
   // useEffect to fetch user data when token is available
   useEffect(() => {
-     const token = localStorage.getItem("token");
+    const token = localStorage.getItem("token");
     if (token && token !== "null") {
       axiosInstance.defaults.headers.common["Authorization"] = `${token}`;
       dispatch(setToken(token));
       dispatch(fetchUser());
-      dispatch(fetchCars());
     }
+    dispatch(fetchCars());
   }, [dispatch]);
 
   return (
