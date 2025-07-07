@@ -1,7 +1,12 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { setToken, setShowLogin,  fetchUser, fetchCars } from "../redux/slices/appSlice";
+import {
+  setToken,
+  setShowLogin,
+  fetchUser,
+  fetchCars,
+} from "../redux/slices/appSlice";
 import toast from "react-hot-toast";
 import axiosInstance from "../util/axiosInstance";
 
