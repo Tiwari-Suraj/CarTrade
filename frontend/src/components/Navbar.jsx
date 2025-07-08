@@ -44,7 +44,7 @@ const Navbar = () => {
       <Link to="/">
         <div className=" flex flel-row">
           <img src={assets.favicon} alt="" />
-          <h1 className="text-3xl font-semibold">CarTarde</h1>
+          <h1 className="text-3xl font-semibold">CarTrade</h1>
         </div>
       </Link>
 
@@ -78,7 +78,7 @@ const Navbar = () => {
 
           <button
             onClick={() => {
-              user ? dispatch(logout()) : dispatch(setShowLogin(true));;
+              user ? dispatch(logout()) : dispatch(setShowLogin(true));
             }}
             className="cursor-pointer px-8 py-2 bg-primary hover:bg-primary-dull transition-all text-white rounded-lg"
           >
